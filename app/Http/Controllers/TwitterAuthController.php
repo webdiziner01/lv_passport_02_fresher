@@ -22,7 +22,7 @@ class TwitterAuthController extends Controller
     		'client_id' => '3',
     		'redirect_uri' => 'http://127.0.0.1:8000/auth/twitter/callback',
     		'response_type' => 'code',
-    		'scope' => '*'
+    		'scope' => 'view-tweets post-tweets'
     	]);
 
     	return redirect('http://localhost/codes/lv/lv_passport_02/public/oauth/authorize?' . $query);
